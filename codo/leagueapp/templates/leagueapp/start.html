@@ -1,10 +1,11 @@
 {% extends "leagueapp/base.html" %}
+{% load static %}
 {% block content %}
-    <h1>Start Page</h1>
-    <div>
-        Welcome to Codo League!
+    <div class = "container-fluid">
+        <img src={% static "leagueapp/codo-logoname-nobackground.png" %} class="rounded mx-auto d-block" alt="Responsive image">
     </div>
-    <div>
-        I am logged in! Go to <a href="../home/">Home Page</a>
-    </div>
+    <h3>
+        <p class="text-center">Codo League is a new way to achieve your gaming heights</p>
+    </h3>
+    <p class="text-center"> Log in or Get Started </p>
 {% endblock content%}
