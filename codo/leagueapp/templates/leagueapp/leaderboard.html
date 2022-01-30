@@ -1,0 +1,23 @@
+{% extends "leagueapp/base.html" %}
+{% block content %}
+<table class="table">
+    <thead class = "thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">CS:GO Elo</th>
+        <th scope="col">Dota 2 Elo</th>
+        <th scope="col">Codo Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for player in leaderboard%}
+        <tr>
+            <td>{{ player.nickname }}</td>
+            <td>{{player.csgo_elo}}</td>
+            <td>{{player.dota2_elo}}</td>
+            <td>{{player.codo_rating}}</td>
+        </tr>
+    {%endfor%}
+</tbody>
+</table>
+{% endblock %}

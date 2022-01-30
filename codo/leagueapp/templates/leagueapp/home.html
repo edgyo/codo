@@ -1,0 +1,12 @@
+{% extends "leagueapp/base.html" %}
+{% load static %}
+{% block content %}
+    <div class = "homelogo">
+        <img src={% static "leagueapp/codo-logoname-nobackground.png" %} class="rounded mx-auto d-block" alt="Responsive image">
+    </div>
+    <h1>Codo League Home</h1>
+    <span>Welcome back to Codo League! You are at home page.</span>
+    <div>
+        Go back to <a href="../start/">Start</a>
+    </div>
+{% endblock content%}
